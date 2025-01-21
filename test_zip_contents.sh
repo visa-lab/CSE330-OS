@@ -6,7 +6,7 @@ check_file ()
 {
     local file_name=$(realpath "$1" 2>/dev/null)
 
-    if [ -e ${file_name} ]; then
+    if [ -e "${file_name}" ]; then
         echo " - File Found: $1"
         let TOTAL_FILES=TOTAL_FILES+1
         return 0
@@ -49,14 +49,14 @@ run_test ()
     local zip_file=$(realpath "$1")
     local unzip_dir="unzip_$(date +%s)"
 
-    mkdir -p ${unzip_dir}
-    pushd ${unzip_dir} 1>/dev/null
+    mkdir -p "${unzip_dir}"
+    pushd "${unzip_dir}" 1>/dev/null
 
-    unzip ${zip_file} 1>/dev/null
+    unzip "${zip_file}" 1>/dev/null
     check_all
 
     popd 1>/dev/null
-    rm -r ${unzip_dir}
+    rm -r "${unzip_dir}"
 }
 
 if [ "$#" -ne 1 ]; then
