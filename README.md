@@ -8,3 +8,4 @@ This repository contains multiple branches. Below is a list of available branche
 | Branch Name  | Description |
 |-------------|------------|
 | [project-1](https://github.com/visa-lab/CSE330-OS/tree/project-1) | Test scripts for Project-1:Virtual Machine and Linux |
+| [project-2](https://github.com/visa-lab/CSE330-OS/tree/project-2) | Test scripts for Project-2: Kernel Module and System Call |
